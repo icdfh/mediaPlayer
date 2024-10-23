@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медиа-плеер с плейлистом</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Медиа-плеер</h1>
+
+        <!-- Плеер -->
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Плейлист -->
+        <div id="playlist-container">
+            <h2>Плейлист</h2>
+            <ul id="playlist"></ul>
+        </div>
+
+        <!-- Форма для добавления нового трека -->
+        <div id="add-track">
+            <h3>Добавить трек</h3>
+            <input type="text" id="track-url" placeholder="URL трека" required>
+            <input type="text" id="track-title" placeholder="Название трека" required>
+            <button id="add-track-button">Добавить трек</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
